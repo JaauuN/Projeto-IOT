@@ -114,9 +114,9 @@ void loop() {
     // Estrutura de repetição para ler a quantidade de leds que tambem é a quantidade de botoes
     // E se qualquer um dos botoes for apertado, inicia o jogo
     for (int i = 0; i < numeroLeds; i++) {
-      if (digitalRead(botoes[i]) == LOW) { // <<< MUDANÇA 2
+      if (digitalRead(botoes[i]) == LOW) {
         Iniciar();
-        while(digitalRead(botoes[0]) == LOW || // <<< MUDANÇA 3
+        while(digitalRead(botoes[0]) == LOW ||
               digitalRead(botoes[1]) == LOW || 
               digitalRead(botoes[2]) == LOW) {
            delay(10);
